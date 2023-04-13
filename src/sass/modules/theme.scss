@@ -1,0 +1,11 @@
+.body-main{
+  &.theme-dark{
+    background-color: $background-main-dark;
+    color: $text-main-light;
+  }
+  &.theme-light{
+    background-color: $background-main-light;
+    color: $text-main-dark;
+  }
+  
+}
