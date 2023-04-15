@@ -1,0 +1,26 @@
+.about{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $background-second-dark;
+
+  .about-img{
+    img{
+      width: 35vw;
+    }
+  }
+
+  .about-content{
+    .heading{
+      padding-left: 11vw;
+      font-size: 5.5em;
+      color: $main-color;
+    }
+    p{
+      font-size: 2rem;
+      padding: 0 10% 0 10vw;
+      margin: 2rem 0 3rem;
+    }
+  }
+  
+}

@@ -43,6 +43,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #19191C;
   z-index: 100;
 }
 .header-main #menu-icon {
@@ -142,6 +143,26 @@ section {
 
 .home-image img {
   width: 30vw;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #252529;
+}
+.about .about-img img {
+  width: 35vw;
+}
+.about .about-content .heading {
+  padding-left: 11vw;
+  font-size: 5.5em;
+  color: #4fb6d7;
+}
+.about .about-content p {
+  font-size: 2rem;
+  padding: 0 10% 0 10vw;
+  margin: 2rem 0 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */
