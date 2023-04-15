@@ -165,4 +165,54 @@ section {
   margin: 2rem 0 3rem;
 }
 
+.skills .skills-text {
+  text-align: center;
+  color: #4fb6d7;
+  font-size: 1.6rem;
+}
+.skills .languages {
+  display: flex;
+  justify-content: space-between;
+  padding: 10vh 0;
+}
+.skills .languages .img-language img {
+  width: 7vw;
+}
+.skills .container-habilities {
+  display: flex;
+  justify-content: space-between;
+}
+.skills .container-habilities .habilities {
+  text-align: center;
+  margin-top: 8vh;
+  width: 25vw;
+  padding: 2vh 2vw;
+  height: 28vh;
+  border-radius: 10px;
+  background-color: #303030;
+}
+.skills .container-habilities .habilities:nth-of-type(2) {
+  width: 27vw;
+  margin-top: 5vh;
+  height: 30vh;
+}
+.skills .container-habilities .habilities h3 {
+  font-size: 1.6rem;
+  color: #4fb6d7;
+}
+.skills .container-habilities .habilities .habilities-content {
+  height: 85%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.skills .container-habilities .habilities .habilities-content img {
+  width: 30%;
+}
+.skills .container-habilities .habilities .habilities-content p {
+  padding-left: 1vw;
+  font-size: 1.3rem;
+  text-align: left;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,58 @@
+.skills{
+
+  .skills-text{
+    text-align: center;
+    color: $main-color;
+    font-size: 1.6rem;
+  }
+
+  .languages{
+    display: flex;
+    justify-content: space-between;
+    padding: 10vh 0;
+
+    .img-language img{
+        width: 7vw;   
+    }
+  }
+
+  .container-habilities{
+    display: flex;
+    justify-content: space-between;
+    .habilities{
+        text-align: center;
+        margin-top: 8vh;
+        width: 25vw;
+        padding: 2vh 2vw;
+        height: 28vh;
+        border-radius: 10px;
+        background-color: #303030;
+        &:nth-of-type(2){
+         width: 27vw;
+         margin-top: 5vh;
+         height: 30vh; 
+        }
+        h3{
+          font-size: 1.6rem;
+          color: $main-color;
+        }
+
+        .habilities-content{
+          height: 85%;
+          width: 100%;
+          display: flex;
+          align-items: center;
+
+          img{
+            width: 30%;
+          }
+          p{
+            padding-left: 1vw;
+            font-size: 1.3rem;
+            text-align: left;
+          }
+        }
+      }
+  }
+  
+}
