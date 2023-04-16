@@ -18,33 +18,43 @@
 
   .container-habilities{
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    transform-style: preserve-3d;
+    flex-direction: column;
+    input[type=radio]{
+      display: none;
+    }
     .habilities{
-        text-align: center;
+        position: relative;
+        display: flex;
         margin-top: 8vh;
-        width: 25vw;
-        padding: 2vh 2vw;
-        height: 28vh;
         border-radius: 10px;
-        background-color: #303030;
-        &:nth-of-type(2){
-         width: 27vw;
-         margin-top: 5vh;
-         height: 30vh; 
-        }
-        h3{
-          font-size: 1.6rem;
-          color: $main-color;
-        }
+        justify-content: center;
 
+        .habilitie{
+          position: absolute;
+          transition: 0.3s;
+          cursor: pointer;
+          width: 25vw;
+          padding: 2vh 2vw;
+          height: 28vh;
+          background-color: #303030;
+
+          h3{
+              font-size: 1.6rem;
+              color: $main-color;
+              text-align: center;
+          }
+        }
         .habilities-content{
           height: 85%;
           width: 100%;
+          margin-top: 5vh;
           display: flex;
-          align-items: center;
 
           img{
-            width: 30%;
+            height: 14vh
           }
           p{
             padding-left: 1vw;
@@ -54,5 +64,38 @@
         }
       }
   }
-  
+      #item-1:checked ~ .habilities #card-4,
+      #item-2:checked ~ .habilities #card-1,
+      #item-3:checked ~ .habilities #card-2,
+      #item-4:checked ~ .habilities #card-3 {
+        transform: translateX(-100%) scale(0.8);
+      z-index: 0;
+      }
+
+      #item-1:checked ~ .habilities #card-2,
+      #item-2:checked ~ .habilities #card-3,
+      #item-3:checked ~ .habilities #card-4,
+      #item-4:checked ~ .habilities #card-1 {
+        transform: translateX(100%) scale(0.8);
+        z-index: 0;
+      }
+
+      #item-1:checked ~ .habilities #card-1,
+      #item-2:checked ~ .habilities #card-2,
+      #item-3:checked ~ .habilities #card-3,
+      #item-4:checked ~ .habilities #card-4 {
+        transform: translateX(0) scale(1);
+        opacity: 1;
+        z-index: 1;
+      }
+
+      #item-1:checked ~ .habilities #card-1,
+      #item-2:checked ~ .habilities #card-2,
+      #item-3:checked ~ .habilities #card-3,
+      #item-4:checked ~ .habilities #card-4 {
+        transform: translateX(0) scale(1);
+        opacity: 1;
+        z-index: 1;
+      }
 }
+
