@@ -13,11 +13,9 @@
 :root{
   --background-main-dark: #19191C;
   --background-second-dark:#252529;
-  --background-main-light: #e4e4e4;
   --text-main-light: #ececec;
   --text-main-dark: #0f0f0f;
   --main-color: #4fb6d7;
-  --background-second-light: #c4c4c4;
 }
 
 html {
@@ -37,10 +35,12 @@ section {
 .body-main.theme-dark {
   background-color: var(--background-main-dark);
   color: var(--text-main-light);
+  transition: .3s;
 }
 .body-main.theme-light {
-  background-color: var(--background-main-light);
-  color: var(--text-main-dark);
+  background-color: var(--background-main-dark);
+  color: var(--text-main-light);
+  transition: .3s;
 }
 
 .header-main {
@@ -139,7 +139,7 @@ section {
   display: inline-block;
   padding: 1rem 2.8rem;
   background: var(--main-color);
-  border-radius: 4rem;
+  border-radius: 1rem;
   box-shadow: 0 0 0.4rem var(--main-color);
   font-size: 1.6rem;
   color: var(--background-second-dark);
