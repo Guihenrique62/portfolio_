@@ -10,6 +10,16 @@
   text-decoration: none;
 }
 
+:root{
+  --background-main-dark: #19191C;
+  --background-second-dark:#252529;
+  --background-main-light: #e4e4e4;
+  --text-main-light: #ececec;
+  --text-main-dark: #0f0f0f;
+  --main-color: #4fb6d7;
+  --background-second-light: #c4c4c4;
+}
+
 html {
   font-size: 62.5%;
   overflow-x: hidden;
@@ -25,12 +35,12 @@ section {
 }
 
 .body-main.theme-dark {
-  background-color: #19191C;
-  color: #ececec;
+  background-color: var(--background-main-dark);
+  color: var(--text-main-light);
 }
 .body-main.theme-light {
-  background-color: #e9e9e9;
-  color: #272727;
+  background-color: var(--background-main-light);
+  color: var(--text-main-dark);
 }
 
 .header-main {
@@ -43,30 +53,30 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #19191C;
+  background-color: var(--background-main-dark);
   z-index: 100;
 }
 .header-main #menu-icon {
   font-size: 3.6em;
-  color: #ececec;
+  color: var(--text-main-light);
   display: none;
 }
 .header-main .logo {
   font-size: 25px;
-  color: #ececec;
+  color: var(--text-main-light);
   text-decoration: none;
   font-weight: 400;
 }
 .header-main .navbar-header a {
   font-size: 18px;
-  color: #ececec;
+  color: var(--text-main-light);
   text-decoration: none;
   font-weight: 400;
   margin-left: 35px;
   transition: 0.3s;
 }
 .header-main .navbar-header a:hover {
-  color: #4fb6d7;
+  color: var(--main-color);
 }
 .header-main .navbar-header img {
   height: 22px;
@@ -74,7 +84,7 @@ section {
 .header-main .navbar-header button {
   margin-left: 35px;
   height: 22px;
-  background-color: #19191C;
+  background-color: var(--background-main-dark);
 }
 .header-main .navbar-header button:hover {
   cursor: pointer;
@@ -94,7 +104,7 @@ section {
   margin-bottom: 2rem;
 }
 .home-content h3 span {
-  color: #4fb6d7;
+  color: var(--main-color);
 }
 .home-content h1 {
   font-size: 5.6rem;
@@ -113,26 +123,26 @@ section {
   width: 4rem;
   height: 4rem;
   background: transparent;
-  border: 0.2rem solid #4fb6d7;
+  border: 0.2rem solid var(--main-color);
   border-radius: 50%;
   font-size: 2rem;
-  color: #4fb6d7;
+  color: var(--main-color);
   margin: 3rem 1.5rem 3rem 0;
   transition: 0.5s ease;
 }
 .home-content .social-media a:hover {
-  background: #4fb6d7;
-  color: #252529;
-  box-shadow: 0 0 1rem #4fb6d7;
+  background: var(--main-color);
+  color: var(--background-second-dark);
+  box-shadow: 0 0 1rem var(--main-color);
 }
 .home-content .btn {
   display: inline-block;
   padding: 1rem 2.8rem;
-  background: #4fb6d7;
+  background: var(--main-color);
   border-radius: 4rem;
-  box-shadow: 0 0 0.4rem #4fb6d7;
+  box-shadow: 0 0 0.4rem var(--main-color);
   font-size: 1.6rem;
-  color: #252529;
+  color: var(--background-second-dark);
   letter-spacing: 0.1rem;
   font-weight: 600;
   transition: 0.5s ease;
@@ -149,7 +159,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #252529;
+  background-color: var(--background-second-dark);
 }
 .about .about-img img {
   width: 35vw;
@@ -157,7 +167,7 @@ section {
 .about .about-content .heading {
   padding-left: 11vw;
   font-size: 5.5em;
-  color: #4fb6d7;
+  color: var(--main-color);
 }
 .about .about-content p {
   font-size: 2rem;
@@ -167,7 +177,7 @@ section {
 
 .skills .skills-text {
   text-align: center;
-  color: #4fb6d7;
+  color: var(--main-color);
   font-size: 1.6rem;
 }
 .skills .languages {
@@ -202,11 +212,11 @@ section {
   width: 25vw;
   padding: 2vh 2vw;
   height: 28vh;
-  background-color: #303030;
+  background-color: var(--background-second-dark);
 }
 .skills .container-habilities .habilities .habilitie h3 {
   font-size: 1.6rem;
-  color: #4fb6d7;
+  color: var(--main-color);
   text-align: center;
 }
 .skills .container-habilities .habilities .habilities-content {
@@ -258,7 +268,7 @@ section {
   font-size: 1.9em;
   text-align: center;
   margin-bottom: 4rem;
-  color: #4fb6d7;
+  color: var(--main-color);
 }
 .projects .portfolio-container {
   display: grid;
@@ -286,13 +296,13 @@ section {
 }
 .projects .portfolio-container .portfolio-box .portfolio-layer {
   position: absolute;
-  color: #272727;
-  text-shadow: 0px 0px 1.5rem #ececec;
+  color: var(--text-main-dark);
+  text-shadow: 0px 0px 1.5rem var(--text-main-light);
   bottom: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), #4fb6d7 120%);
+  background: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color) 120%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -315,12 +325,12 @@ section {
   align-items: center;
   width: 5rem;
   height: 5rem;
-  background: #272727;
+  background: var(--text-main-dark);
   border-radius: 50%;
 }
 .projects .portfolio-container .portfolio-box .portfolio-layer a i {
   font-size: 2rem;
-  color: #ececec;
+  color: var(--text-main-light);
 }
 
 .footer {
@@ -332,22 +342,22 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #19191C;
+  background-color: var(--background-main-dark);
   z-index: 100;
 }
 .footer a {
   font-size: 2.2rem;
-  color: #ececec;
+  color: var(--text-main-light);
   text-decoration: none;
   transition: 0.3s;
 }
 .footer a:hover {
-  color: #4fb6d7;
+  color: var(--main-color);
 }
 .footer i {
   font-size: 3.5rem;
   margin-bottom: 2rem;
-  color: #ececec;
+  color: var(--text-main-light);
 }
 
 /*# sourceMappingURL=style.css.map */
