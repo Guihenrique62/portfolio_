@@ -2,8 +2,13 @@ import './styles/style.css';
 import slider from './scripts/slider';
 import Typed from 'typed.js';
 import handlerTheme from './scripts/handlerTheme.js';
+import { handlerLanguageBr, handlerLanguageEn } from './scripts/handlerLanguage';
 
 document.getElementById('theme-button').addEventListener('click', handlerTheme)
+document.getElementById('br-button').addEventListener('click', handlerLanguageBr)
+document.getElementById('en-button').addEventListener('click', handlerLanguageEn)
+
+
 
 
 
