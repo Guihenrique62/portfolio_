@@ -11,15 +11,15 @@ document.getElementById('en-button').addEventListener('click', handlerLanguageEn
 
 
 
-
 //Writes the loop of strings
-const typed = new Typed('.multiple-text',{
+  const typed = new Typed('.multiple-text',{
   strings: ['Frontend Developer', 'Freelancer', 'Web Developer'],
   typeSpeed: 100,
   backSpeed: 100,
   backDelay: 1000,
   loop: true
-
 });
+
+
 
 
