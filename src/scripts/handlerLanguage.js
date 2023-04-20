@@ -22,8 +22,9 @@ export function handlerLanguageBr(){
         backSpeed: 100,
         backDelay: 1000,
         loop: true
-      
       });
+    document.querySelector('.navbar-header').classList.remove('active')
+    document.getElementById('menu-icon').classList.remove('bx-x')
 }
 
 export function handlerLanguageEn(){
@@ -40,6 +41,8 @@ export function handlerLanguageEn(){
         loop: true
       
       });
+      document.querySelector('.navbar-header').classList.remove('active')
+    document.getElementById('menu-icon').classList.remove('bx-x')
 }
 
   

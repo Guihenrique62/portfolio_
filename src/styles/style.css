@@ -361,3 +361,168 @@ section {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/* breakPoints */
+@media (max-width: 1220px){
+  html{
+    font-size: 55%;
+  }
+  .skills .container-habilities .habilities .habilities-content p {
+    font-size: 1.15rem;
+  }
+  .skills .container-habilities .habilities .habilities-content img {
+    height: 9vh;
+  }
+}
+
+@media (max-width: 991px){
+  .header-main {
+    padding: 2rem 3%;
+  }
+
+  section{
+    padding: 10rem 3% 2rem;
+  }
+
+  .footer{
+    padding: 2rem 3%;
+  }
+}
+
+@media (max-width: 795px){
+    .header-main #menu-icon {
+      display: block;
+    }
+
+    .navbar-header{
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      padding: 1rem 3%;
+      background: var(--background-main-dark);
+      box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+      display: none;
+    }
+
+    .navbar-header.active{
+      display: block;
+      
+    }
+
+    .navbar-header a{
+      display: block;
+      font-size: 2rem;
+      margin: 3rem 0;
+    }
+
+    .home{
+      flex-direction: column;
+    }
+
+    .home-content h3{
+      font-size: 2.6rem;
+    }
+
+    .home-content p{
+      margin-right: 0;
+    }
+
+    .home-content h1{
+      font-size: 5rem;
+    }
+    
+    .home-image img{
+      width: 60vw;
+      margin-top: 3rem;
+    }
+
+    .about{
+      flex-direction: column-reverse;
+      justify-content: space-evenly;
+      margin-top: 4rem;
+    }
+    .about .about-img img{
+      width: 60vw;
+      margin-top: 3rem;
+    }
+
+    .skills .container-habilities .habilities .habilitie {
+      width: 40vw;
+    }
+
+    .skills .container-habilities .habilities .habilities-content p {
+      font-size: 1.3rem;
+    }
+    .skills .languages .img-language img {
+      width: 10vw;
+    }
+
+    .projects h2{
+      margin-bottom: 5rem;
+      font-size: 2rem;
+    }
+
+    .projects{
+      padding-bottom: 7rem;
+    }
+    .projects .portfolio-container {
+      grid-template-columns: repeat(2,1fr);
+    }
+  }
+
+@media (max-width: 550px){
+  .projects .portfolio-container {
+    grid-template-columns: 1fr;
+  }
+  html{
+    font-size: 50%;
+  }
+  .skills .container-habilities .habilities .habilitie {
+    width: 50vw;
+  }
+
+  .skills #item-1:checked ~ .habilities #card-4,
+.skills #item-2:checked ~ .habilities #card-1,
+.skills #item-3:checked ~ .habilities #card-2,
+.skills #item-4:checked ~ .habilities #card-3 {
+  transform: translateX(-80%) scale(0.8);
+  z-index: 0;
+}
+.skills #item-1:checked ~ .habilities #card-2,
+.skills #item-2:checked ~ .habilities #card-3,
+.skills #item-3:checked ~ .habilities #card-4,
+.skills #item-4:checked ~ .habilities #card-1 {
+  transform: translateX(80%) scale(0.8);
+  z-index: 0;
+}
+.skills #item-1:checked ~ .habilities #card-1,
+.skills #item-2:checked ~ .habilities #card-2,
+.skills #item-3:checked ~ .habilities #card-3,
+.skills #item-4:checked ~ .habilities #card-4 {
+  transform: translateX(0) scale(1);
+  opacity: 0.2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.276);
+  z-index: 1;
+}
+.skills #item-1:checked ~ .habilities #card-1,
+.skills #item-2:checked ~ .habilities #card-2,
+.skills #item-3:checked ~ .habilities #card-3,
+.skills #item-4:checked ~ .habilities #card-4 {
+  transform: translateX(0) scale(1);
+  opacity: 1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.276);
+  z-index: 1;
+}
+
+
+}
+
+@media (max-width: 425px){
+  .home-image img{
+    width: 85vw;
+  }
+  .about .about-img img{
+    width: 85vw;
+  }
+}

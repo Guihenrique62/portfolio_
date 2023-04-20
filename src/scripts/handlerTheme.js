@@ -6,7 +6,7 @@ export default function (){
     themeIcon.setAttribute('src', 'images/icons/theme-icon-dark.png');
   } else {
     themeIcon.setAttribute('src', 'images/icons/theme-icon-light.png');
-  }
+  } 
 
   
   if(bodyclass.contains('theme-dark')){
@@ -30,5 +30,8 @@ export default function (){
     document.body.classList.remove('theme-light')
     document.body.classList.add('theme-dark')
   }
+
+  document.querySelector('.navbar-header').classList.remove('active')
+  document.getElementById('menu-icon').classList.remove('bx-x')
 
 }
