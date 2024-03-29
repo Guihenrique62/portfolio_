@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap');
+
+body{
+   background-color: rgb(250, 247, 251);
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+}
+*{
+   padding: 0;
+   margin: 0;
+   font-family: 'Comfortaa', cursive;
+   font-weight: 300;
+}
+
+//header style
+@import 'modules/header.scss';
+
+//footer style
+@import 'modules/footer.scss';
+//home page styler
+@import 'modules/home.scss';
+
+//search page styler
+@import 'modules/search.scss'
