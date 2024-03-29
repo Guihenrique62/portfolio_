@@ -17,7 +17,7 @@ export function handlerLanguageBr(){
         i++
     })
     const typed = new Typed('.multiple-text',{
-        strings: ['Frontend Developer', 'Freelancer', 'Web Developer'],
+        strings: ['Full Stack Developer', 'Freelancer', 'Web Developer'],
         typeSpeed: 100,
         backSpeed: 100,
         backDelay: 1000,
