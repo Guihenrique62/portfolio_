@@ -10,14 +10,6 @@
   text-decoration: none;
 }
 
-:root{
-  --background-main-dark: #19191C;
-  --background-second-dark:#252529;
-  --text-main-light: #ececec;
-  --text-main-dark: #0f0f0f;
-  --main-color: #4fb6d7;
-}
-
 html {
   font-size: 62.5%;
   overflow-x: hidden;
@@ -33,25 +25,12 @@ section {
 }
 
 .body-main.theme-dark {
-  background-color: var(--background-main-dark);
-  color: var(--text-main-light);
-  transition: .3s;
+  background-color: #19191C;
+  color: #ececec;
 }
 .body-main.theme-light {
-  background-color: var(--background-main-dark);
-  color: var(--text-main-light);
-  transition: .3s;
-}
-
-
-.whatsapp-icon {
-  height: 60px;
-  transition: height 0.3s;
- 
-}
-
-.whatsapp-icon:hover {
-  height: 70px;
+  background-color: #e4e4e4;
+  color: #0f0f0f;
 }
 
 .header-main {
@@ -64,30 +43,30 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--background-main-dark);
+  background-color: #19191C;
   z-index: 100;
 }
 .header-main #menu-icon {
   font-size: 3.6em;
-  color: var(--text-main-light);
+  color: #ececec;
   display: none;
 }
 .header-main .logo {
   font-size: 25px;
-  color: var(--text-main-light);
+  color: #ececec;
   text-decoration: none;
   font-weight: 400;
 }
 .header-main .navbar-header a {
   font-size: 18px;
-  color: var(--text-main-light);
+  color: #ececec;
   text-decoration: none;
   font-weight: 400;
   margin-left: 35px;
   transition: 0.3s;
 }
 .header-main .navbar-header a:hover {
-  color: var(--main-color);
+  color: #4fb6d7;
 }
 .header-main .navbar-header img {
   height: 22px;
@@ -95,10 +74,19 @@ section {
 .header-main .navbar-header button {
   margin-left: 35px;
   height: 22px;
-  background-color: var(--background-main-dark);
+  background-color: #19191C;
 }
 .header-main .navbar-header button:hover {
   cursor: pointer;
+}
+
+.whatsapp-icon {
+  height: 60px;
+  transition: height 0.3s;
+}
+
+.whatsapp-icon:hover {
+  height: 70px;
 }
 
 .home {
@@ -115,7 +103,7 @@ section {
   margin-bottom: 2rem;
 }
 .home-content h3 span {
-  color: var(--main-color);
+  color: #4fb6d7;
 }
 .home-content h1 {
   font-size: 5.6rem;
@@ -134,26 +122,26 @@ section {
   width: 4rem;
   height: 4rem;
   background: transparent;
-  border: 0.2rem solid var(--main-color);
+  border: 0.2rem solid #4fb6d7;
   border-radius: 50%;
   font-size: 2rem;
-  color: var(--main-color);
+  color: #4fb6d7;
   margin: 3rem 1.5rem 3rem 0;
   transition: 0.5s ease;
 }
 .home-content .social-media a:hover {
-  background: var(--main-color);
-  color: var(--background-second-dark);
-  box-shadow: 0 0 1rem var(--main-color);
+  background: #4fb6d7;
+  color: #252529;
+  box-shadow: 0 0 1rem #4fb6d7;
 }
 .home-content .btn {
   display: inline-block;
   padding: 1rem 2.8rem;
-  background: var(--main-color);
-  border-radius: 1rem;
-  box-shadow: 0 0 0.4rem var(--main-color);
+  background: #4fb6d7;
+  border-radius: 4rem;
+  box-shadow: 0 0 0.4rem #4fb6d7;
   font-size: 1.6rem;
-  color: var(--background-second-dark);
+  color: #252529;
   letter-spacing: 0.1rem;
   font-weight: 600;
   transition: 0.5s ease;
@@ -170,7 +158,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--background-second-dark);
+  background-color: #252529;
 }
 .about .about-img img {
   width: 35vw;
@@ -178,7 +166,7 @@ section {
 .about .about-content .heading {
   padding-left: 11vw;
   font-size: 5.5em;
-  color: var(--main-color);
+  color: #4fb6d7;
 }
 .about .about-content p {
   font-size: 2rem;
@@ -188,7 +176,7 @@ section {
 
 .skills .skills-text {
   text-align: center;
-  color: var(--main-color);
+  color: #4fb6d7;
   font-size: 1.6rem;
 }
 .skills .languages {
@@ -223,11 +211,11 @@ section {
   width: 25vw;
   padding: 2vh 2vw;
   height: 28vh;
-  background-color: var(--background-second-dark);
+  background-color: #252529;
 }
 .skills .container-habilities .habilities .habilitie h3 {
   font-size: 1.6rem;
-  color: var(--main-color);
+  color: #4fb6d7;
   text-align: center;
 }
 .skills .container-habilities .habilities .habilities-content {
@@ -279,7 +267,7 @@ section {
   font-size: 1.9em;
   text-align: center;
   margin-bottom: 4rem;
-  color: var(--main-color);
+  color: #4fb6d7;
 }
 .projects .portfolio-container {
   display: grid;
@@ -307,13 +295,13 @@ section {
 }
 .projects .portfolio-container .portfolio-box .portfolio-layer {
   position: absolute;
-  color: var(--text-main-dark);
-  text-shadow: 0px 0px 1.5rem var(--text-main-light);
+  color: #0f0f0f;
+  text-shadow: 0px 0px 1.5rem #ececec;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color) 120%);
+  background: linear-gradient(rgba(0, 0, 0, 0.1), #4fb6d7 120%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -336,12 +324,12 @@ section {
   align-items: center;
   width: 5rem;
   height: 5rem;
-  background: var(--text-main-dark);
+  background: #0f0f0f;
   border-radius: 50%;
 }
 .projects .portfolio-container .portfolio-box .portfolio-layer a i {
   font-size: 2rem;
-  color: var(--text-main-light);
+  color: #ececec;
 }
 
 .footer {
@@ -353,206 +341,22 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--background-main-dark);
+  background-color: #19191C;
   z-index: 100;
 }
 .footer a {
   font-size: 2.2rem;
-  color: var(--text-main-light);
+  color: #ececec;
   text-decoration: none;
   transition: 0.3s;
 }
 .footer a:hover {
-  color: var(--main-color);
+  color: #4fb6d7;
 }
 .footer i {
   font-size: 3.5rem;
   margin-bottom: 2rem;
-  color: var(--text-main-light);
+  color: #ececec;
 }
 
 /*# sourceMappingURL=style.css.map */
-
-/* breakPoints */
-@media (max-width: 1220px){
-  html{
-    font-size: 55%;
-  }
-  .skills .container-habilities .habilities .habilities-content p {
-    font-size: 1.15rem;
-  }
-  .skills .container-habilities .habilities .habilities-content img {
-    height: 9vh;
-  }
-}
-
-@media (max-width: 991px){
-  .header-main {
-    padding: 2rem 3%;
-  }
-
-  section{
-    padding: 10rem 3% 2rem;
-  }
-
-  .footer{
-    padding: 2rem 3%;
-  }
-}
-
-@media (max-width: 795px){
-    .header-main #menu-icon {
-      display: block;
-    }
-
-    .whatsapp-icon {
-      height: 40px;
-      transition: height 0.3s;
-    }
-    
-    .whatsapp-icon:hover {
-      height: 45px;
-    }
-
-    .navbar-header{
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100%;
-      padding: 1rem 3%;
-      background: var(--background-main-dark);
-      box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
-      display: none;
-    }
-
-    .navbar-header.active{
-      display: block;
-      
-    }
-
-    .navbar-header a{
-      display: block;
-      font-size: 2rem;
-      margin: 3rem 0;
-    }
-
-    .home{
-      flex-direction: column;
-    }
-
-    .home-content h3{
-      font-size: 2.6rem;
-    }
-
-    .home-content p{
-      margin-right: 0;
-    }
-
-    .home-content h1{
-      font-size: 5rem;
-    }
-    
-    .home-image img{
-      width: 60vw;
-      margin-top: 3rem;
-    }
-
-    .about{
-      flex-direction: column-reverse;
-      justify-content: space-evenly;
-      margin-top: 4rem;
-    }
-    .about .about-img img{
-      width: 60vw;
-      margin-top: 3rem;
-    }
-
-    .skills .container-habilities .habilities .habilitie {
-      width: 40vw;
-    }
-
-    .skills .container-habilities .habilities .habilities-content p {
-      font-size: 1.3rem;
-    }
-    .skills .languages .img-language img {
-      width: 10vw;
-    }
-
-    .projects h2{
-      margin-bottom: 5rem;
-      font-size: 2rem;
-    }
-
-    .projects{
-      padding-bottom: 7rem;
-    }
-    .projects .portfolio-container {
-      grid-template-columns: repeat(2,1fr);
-    }
-  }
-
-@media (max-width: 550px){
-  .projects .portfolio-container {
-    grid-template-columns: 1fr;
-  }
-  html{
-    font-size: 50%;
-  }
-  .skills .container-habilities .habilities .habilitie {
-    width: 50vw;
-  }
-
-  .skills #item-1:checked ~ .habilities #card-4,
-.skills #item-2:checked ~ .habilities #card-1,
-.skills #item-3:checked ~ .habilities #card-2,
-.skills #item-4:checked ~ .habilities #card-3 {
-  transform: translateX(-80%) scale(0.8);
-  z-index: 0;
-}
-.skills #item-1:checked ~ .habilities #card-2,
-.skills #item-2:checked ~ .habilities #card-3,
-.skills #item-3:checked ~ .habilities #card-4,
-.skills #item-4:checked ~ .habilities #card-1 {
-  transform: translateX(80%) scale(0.8);
-  z-index: 0;
-}
-.skills #item-1:checked ~ .habilities #card-1,
-.skills #item-2:checked ~ .habilities #card-2,
-.skills #item-3:checked ~ .habilities #card-3,
-.skills #item-4:checked ~ .habilities #card-4 {
-  transform: translateX(0) scale(1);
-  opacity: 0.2;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.276);
-  z-index: 1;
-}
-.skills #item-1:checked ~ .habilities #card-1,
-.skills #item-2:checked ~ .habilities #card-2,
-.skills #item-3:checked ~ .habilities #card-3,
-.skills #item-4:checked ~ .habilities #card-4 {
-  transform: translateX(0) scale(1);
-  opacity: 1;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.276);
-  z-index: 1;
-}
-
-
-}
-
-@media (max-width: 425px){
-  .home-image img{
-    width: 85vw;
-  }
-  .about .about-img img{
-    width: 85vw;
-  }
-
-  .whatsapp-icon {
-    height: 30px;
-    transition: height 0.3s;
-  }
-  
-  .whatsapp-icon:hover {
-    height: 35px;
-  }
-}
-
